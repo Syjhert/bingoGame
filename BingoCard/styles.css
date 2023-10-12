@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+}
+#main, #startArea{
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#gameCode::placeholder{
+    color: black;
+}
+#gameCodeInp{
+    background-color: beige;
+    height: 3rem;
+    width: 200px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.btn-primary{
+    width: 200px;
+    margin: 15px;
+}
+#clearGreyCells{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cardArea {
+    display: none;
+}
+.number td:hover{
+    cursor: pointer;
+}
+.number td:hover, .number .grey{
+    background-color: lightgrey;
+}
+#ttlGameCode{
+    display: flex;
+}
+.buttons{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+.links:hover {
+    cursor: pointer;
+}
+#bingoCard{
+    width: 300px;
+    height: 300px;
+    empty-cells: show;
+    border: 1px solid black;
+}
+.cell{
+    background-color: white;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+}
+.number > td{
+    border: 1px solid black;
+}

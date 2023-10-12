@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style type="text/css">
+        body { background: beige !important; }
+     </style>
+</head>
+<body>
+    <div id="main">
+        <div id="startArea">
+            <h1 id="enterGameCode">Enter your game code here: </h1>
+            <input type="text" id="gameCodeInp" class="startInp" placeholder="Game Code">
+            <button type="button" id="getCardButton" class="btn btn-primary" class="startInp">GET CARD</button>
+            <button type="button" id="createNewGame" class="btn btn-primary" class="startInp">CREATE NEW GAME</button>
+        </div>
+        <div id="cardArea">
+            <h1 id="ttlGameCode">Game Code: No change</h1>
+            <div id="topButtons" class="buttons">
+                <a id="changeCodeLink" class="links">&gt;&gt;Change Code</a>
+                <a id="dashboardLink" class="links">Open Dashboard&lt;&lt;</a>
+            </div>
+            <table id="bingoCard">
+                <tr>
+                    <th class="cell">B</th>
+                    <th class="cell">I</th>
+                    <th class="cell">N</th>
+                    <th class="cell">G</th>
+                    <th class="cell">O</th>
+                </tr>
+                <tr class="number">
+                    <td class="cell" id="B1"></td>
+                    <td class="cell" id="B2"></td>
+                    <td class="cell" id="B3"></td>
+                    <td class="cell" id="B4"></td>
+                    <td class="cell" id="B5"></td>
+                </tr>
+                <tr class="number">
+                    <td class="cell" id="I1"></td>
+                    <td class="cell" id="I2"></td>
+                    <td class="cell" id="I3"></td>
+                    <td class="cell" id="I4"></td>
+                    <td class="cell" id="I5"></td>
+                </tr>
+                <tr class="number">
+                    <td class="cell" id="N1"></td>
+                    <td class="cell" id="N2"></td>
+                    <td class="cell" id="N3"></td>
+                    <td class="cell" id="N4"></td>
+                    <td class="cell" id="N5"></td>
+                </tr>
+                <tr class="number">
+                    <td class="cell" id="G1"></td>
+                    <td class="cell" id="G2"></td>
+                    <td class="cell" id="G3"></td>
+                    <td class="cell" id="G4"></td>
+                    <td class="cell" id="G5"></td>
+                </tr>
+                <tr class="number">
+                    <td class="cell" id="O1"></td>
+                    <td class="cell" id="O2"></td>
+                    <td class="cell" id="O3"></td>
+                    <td class="cell" id="O4"></td>
+                    <td class="cell" id="O5"></td>
+                </tr>
+            </table>
+            <div id="botButtons" class="buttons">
+                <button type="button" id="checkCardBut" class="btn btn-primary">CHECK CARD</button>
+                <button type="button" id="newCardBut" class="btn btn-primary">NEW CARD</button>
+            </div>
+            <div id="clearGreyCells">
+                <p>Grey shades does not affect win condition.</p>
+                <button type="button" id="clearGreyCellsBut" class="btn btn-primary">CLEAR GREY CELLS</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html> 
